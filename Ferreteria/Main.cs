@@ -10,14 +10,14 @@ namespace Ferreteria
         {
             InitializeComponent();
             this.IsMdiContainer = true;
-        
+
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
 
         }
-         //Configuaraciones de la parte de Ventana y Archivo
+        //Configuaraciones de la parte de Ventana y Archivo
         private void mosaicosVerticalesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LayoutMdi(MdiLayout.TileVertical);
@@ -71,8 +71,11 @@ namespace Ferreteria
             empleados.Show();
         }
 
-
-
-
+        private void personasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPersonas frmPersonas = new FrmPersonas();
+            frmPersonas.MdiParent = this;
+            frmPersonas.Show();
+        }
     }
 }
