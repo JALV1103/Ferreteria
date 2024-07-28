@@ -45,7 +45,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(177, 24);
+            label1.Location = new Point(160, 19);
             label1.Name = "label1";
             label1.Size = new Size(105, 35);
             label1.TabIndex = 0;
@@ -137,7 +137,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(463, 450);
+            ClientSize = new Size(441, 424);
             Controls.Add(groupBox);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
