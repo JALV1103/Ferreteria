@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Seguridad));
             label1 = new Label();
             groupBox = new GroupBox();
             btnSalir = new Button();
@@ -72,7 +73,7 @@
             btnSalir.Location = new Point(253, 280);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(94, 29);
-            btnSalir.TabIndex = 2;
+            btnSalir.TabIndex = 5;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
@@ -83,7 +84,7 @@
             BtnLimpiar.Location = new Point(139, 280);
             BtnLimpiar.Name = "BtnLimpiar";
             BtnLimpiar.Size = new Size(94, 29);
-            BtnLimpiar.TabIndex = 2;
+            BtnLimpiar.TabIndex = 4;
             BtnLimpiar.Text = "Limpiar";
             BtnLimpiar.UseVisualStyleBackColor = true;
             BtnLimpiar.Click += BtnLimpiar_Click;
@@ -94,7 +95,7 @@
             btnIngresar.Location = new Point(18, 280);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(94, 29);
-            btnIngresar.TabIndex = 2;
+            btnIngresar.TabIndex = 3;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = true;
             btnIngresar.Click += btnIngresar_Click;
@@ -105,8 +106,7 @@
             txtBoxContra.Name = "txtBoxContra";
             txtBoxContra.PasswordChar = '*';
             txtBoxContra.Size = new Size(312, 27);
-            txtBoxContra.TabIndex = 1;
-            //txtBoxContra.TextChanged += txtUsuario_TextChanged;
+            txtBoxContra.TabIndex = 2;
             // 
             // txtBoxLogin
             // 
@@ -114,7 +114,6 @@
             txtBoxLogin.Name = "txtBoxLogin";
             txtBoxLogin.Size = new Size(312, 27);
             txtBoxLogin.TabIndex = 1;
-            //txtBoxLogin.TextChanged += txtUsuario_TextChanged;
             // 
             // label3
             // 
@@ -141,6 +140,7 @@
             ClientSize = new Size(463, 450);
             Controls.Add(groupBox);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Seguridad";
             Text = "Seguridad";
             groupBox.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarEmpleado));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -92,7 +93,7 @@
             txtNombre.Location = new Point(170, 88);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(238, 27);
-            txtNombre.TabIndex = 2;
+            txtNombre.TabIndex = 1;
             // 
             // txtApellido
             // 
@@ -106,14 +107,14 @@
             txtNpago.Location = new Point(170, 182);
             txtNpago.Name = "txtNpago";
             txtNpago.Size = new Size(238, 27);
-            txtNpago.TabIndex = 2;
+            txtNpago.TabIndex = 3;
             // 
             // txtArea
             // 
             txtArea.Location = new Point(170, 226);
             txtArea.Name = "txtArea";
             txtArea.Size = new Size(238, 27);
-            txtArea.TabIndex = 2;
+            txtArea.TabIndex = 4;
             // 
             // btnConfirmar
             // 
@@ -121,7 +122,7 @@
             btnConfirmar.Location = new Point(214, 292);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.Size = new Size(94, 29);
-            btnConfirmar.TabIndex = 3;
+            btnConfirmar.TabIndex = 5;
             btnConfirmar.Text = "Confirmar";
             btnConfirmar.UseVisualStyleBackColor = true;
             btnConfirmar.Click += btnConfirmar_Click_1;
@@ -132,7 +133,7 @@
             btnCancelar.Location = new Point(314, 292);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 29);
-            btnCancelar.TabIndex = 3;
+            btnCancelar.TabIndex = 6;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click_1;
@@ -153,6 +154,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AgregarEmpleado";
             Text = "AgregarEmpleado";
             ResumeLayout(false);

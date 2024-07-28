@@ -14,6 +14,11 @@ namespace Ferreteria
     public partial class ListadoEmpleados : Form
     {
         private List<Trabajador> trabajadores;
+        private void ActualizarDataGridView()
+        {
+            gridEmpleados.DataSource = null;
+            gridEmpleados.DataSource = this.trabajadores;
+        }
         public ListadoEmpleados()
         {
             InitializeComponent();
@@ -26,11 +31,7 @@ namespace Ferreteria
             trabajadores.Add(new Trabajador(4, "Jesus", "Barahona", "015", "Construccion"));
 
             this.bindingSrc.DataSource = trabajadores;
-        }
-        private void ActualizarDataGridView()
-        {
-            gridEmpleados.DataSource = null;
-            gridEmpleados.DataSource = this.trabajadores;
+            ActualizarDataGridView();
         }
 
         private void btnNuevo_Click_1(object sender, EventArgs e)

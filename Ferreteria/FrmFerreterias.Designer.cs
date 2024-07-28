@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFerreterias));
             btnEliminarContacto = new Button();
             btnNuevoContacto = new Button();
             label1 = new Label();
@@ -189,6 +190,7 @@
             Controls.Add(btnEliminarContacto);
             Controls.Add(btnNuevoContacto);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmFerreterias";
             Text = "FrmFerreterias";
             ((System.ComponentModel.ISupportInitialize)dataGridFerreterias).EndInit();

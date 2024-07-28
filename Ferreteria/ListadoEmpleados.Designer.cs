@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListadoEmpleados));
             label1 = new Label();
             gridEmpleados = new DataGridView();
             colId = new DataGridViewTextBoxColumn();
@@ -154,6 +155,7 @@
             Controls.Add(btnGuardar);
             Controls.Add(gridEmpleados);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ListadoEmpleados";
             Text = "ListadoEmpleados";
             ((System.ComponentModel.ISupportInitialize)gridEmpleados).EndInit();
