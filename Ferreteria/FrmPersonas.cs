@@ -7,12 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FerreteriaLib;
+
 
 namespace Ferreteria
 {
     public partial class FrmPersonas : Form
     {
         private List<Personas> personas;
+        private Personas _personaSeleccionada;
+
         public FrmPersonas()
         {
             InitializeComponent();
@@ -23,7 +27,6 @@ namespace Ferreteria
             personas.Add(new Personas(3, "Maria", "correo@gmail.com", "Olancho", "85858585"));
 
             this.bindingSrc.DataSource = personas;
-
         }
 
         private void ActualizarDataGridView()
@@ -32,13 +35,12 @@ namespace Ferreteria
             dataGridPersonas.DataSource = this.personas;
         }
 
-
         private void btnNuevoContacto_Click(object sender, EventArgs e)
         {
             FrmNuevaPersona frmNuevaPersona = new FrmNuevaPersona();
             frmNuevaPersona.ShowDialog();
-           
-            if(frmNuevaPersona.IsConfirmar == true)
+
+            if (frmNuevaPersona.IsConfirmar == true)
             {
                 Personas nuevo = new Personas(
                         this.personas.Count + 1,
@@ -52,6 +54,31 @@ namespace Ferreteria
             this.bindingSrc.DataSource = this.personas;
             ActualizarDataGridView();
             frmNuevaPersona = null;
+        }
+
+        private void btnEliminarContacto_Click(object sender, EventArgs e)
+        {
+            if (dataGridPersonas.SelectedRows.Count > 0)
+            {
+                int rowIndex = dataGridPersonas.SelectedRows[0].Index;
+                personas.RemoveAt(rowIndex);
+                ActualizarDataGridView();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una fila");
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            ExportarAExcel excel = new ExportarAExcel();
+            if (saveDialog.ShowDialog() == DialogResult.OK)
+            {
+                string archivoAGuardar = saveDialog.FileName;
+                excel.ExportarListaAExcel(personas, archivoAGuardar);
+                MessageBox.Show("Archivo Guardado Exitosamente");
+            }
         }
     }
 }

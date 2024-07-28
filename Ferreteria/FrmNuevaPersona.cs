@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FerreteriaLib;
 
 namespace Ferreteria
 {
@@ -21,6 +22,7 @@ namespace Ferreteria
         public FrmNuevaPersona()
         {
             InitializeComponent();
+
         }
 
         public string PersonaName { get => _name; set => _name = value; }
