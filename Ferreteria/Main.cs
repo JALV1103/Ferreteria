@@ -66,9 +66,9 @@ namespace Ferreteria
         // Con esto ya incluiriamos la parte de Excel
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Empleado empleados = new Empleado();
-            empleados.MdiParent = this;
-            empleados.Show();
+            ListadoEmpleados listadoEmpleados = new ListadoEmpleados();
+            listadoEmpleados.MdiParent = this;
+            listadoEmpleados.Show();
         }
 
         private void personasToolStripMenuItem_Click(object sender, EventArgs e)
