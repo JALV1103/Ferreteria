@@ -93,6 +93,7 @@
             ferreteriasToolStripMenuItem.Name = "ferreteriasToolStripMenuItem";
             ferreteriasToolStripMenuItem.Size = new Size(224, 26);
             ferreteriasToolStripMenuItem.Text = "Ferreterias";
+            ferreteriasToolStripMenuItem.Click += ferreteriasToolStripMenuItem_Click;
             // 
             // empleadosToolStripMenuItem
             // 

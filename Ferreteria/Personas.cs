@@ -21,7 +21,7 @@ namespace Ferreteria
         public string Telefono { get => _telefono; set => _telefono = value; }
         public string Direccion { get => _direccion; set => _direccion = value; }
 
-        //public Personas() { }
+        public Personas() { }
 
         public Personas(int id, string name, string correo, string direccion, string telefono)
         {

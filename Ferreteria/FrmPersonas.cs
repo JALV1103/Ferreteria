@@ -15,7 +15,6 @@ namespace Ferreteria
     public partial class FrmPersonas : Form
     {
         private List<Personas> personas;
-        private Personas _personaSeleccionada;
 
         public FrmPersonas()
         {

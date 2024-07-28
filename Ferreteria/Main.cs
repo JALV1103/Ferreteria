@@ -77,5 +77,12 @@ namespace Ferreteria
             frmPersonas.MdiParent = this;
             frmPersonas.Show();
         }
+
+        private void ferreteriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFerreterias frmFerreterias = new FrmFerreterias();
+            frmFerreterias.MdiParent = this;
+            frmFerreterias.Show();
+        }
     }
 }
