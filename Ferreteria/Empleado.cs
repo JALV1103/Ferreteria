@@ -64,5 +64,15 @@ namespace Ferreteria
                 MessageBox.Show("Archivo Guardado Exitosamente");
             }
         }
+
+        private void lblEmpleado1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmpleado4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
