@@ -53,9 +53,10 @@
             // 
             statusStrip.ImageScalingSize = new Size(20, 20);
             statusStrip.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip.Location = new Point(0, 482);
+            statusStrip.Location = new Point(0, 1039);
             statusStrip.Name = "statusStrip";
-            statusStrip.Size = new Size(912, 26);
+            statusStrip.Padding = new Padding(1, 0, 12, 0);
+            statusStrip.Size = new Size(1904, 22);
             statusStrip.TabIndex = 1;
             statusStrip.Text = "statusStrip";
             // 
@@ -63,7 +64,7 @@
             // 
             toolStripStatusLabel1.BackColor = SystemColors.Control;
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(54, 20);
+            toolStripStatusLabel1.Size = new Size(42, 17);
             toolStripStatusLabel1.Text = "Estado";
             toolStripStatusLabel1.Click += toolStripStatusLabel1_Click;
             // 
@@ -71,13 +72,13 @@
             // 
             archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { salirToolStripMenuItem });
             archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            archivoToolStripMenuItem.Size = new Size(73, 24);
+            archivoToolStripMenuItem.Size = new Size(60, 19);
             archivoToolStripMenuItem.Text = "Archivo";
             // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(121, 26);
+            salirToolStripMenuItem.Size = new Size(96, 22);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
@@ -85,27 +86,27 @@
             // 
             mantenimientosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ferreteriasToolStripMenuItem, empleadosToolStripMenuItem, personasToolStripMenuItem });
             mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
-            mantenimientosToolStripMenuItem.Size = new Size(130, 24);
+            mantenimientosToolStripMenuItem.Size = new Size(106, 19);
             mantenimientosToolStripMenuItem.Text = "Mantenimientos";
             // 
             // ferreteriasToolStripMenuItem
             // 
             ferreteriasToolStripMenuItem.Name = "ferreteriasToolStripMenuItem";
-            ferreteriasToolStripMenuItem.Size = new Size(224, 26);
+            ferreteriasToolStripMenuItem.Size = new Size(132, 22);
             ferreteriasToolStripMenuItem.Text = "Ferreterias";
             ferreteriasToolStripMenuItem.Click += ferreteriasToolStripMenuItem_Click;
             // 
             // empleadosToolStripMenuItem
             // 
             empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            empleadosToolStripMenuItem.Size = new Size(224, 26);
+            empleadosToolStripMenuItem.Size = new Size(132, 22);
             empleadosToolStripMenuItem.Text = "Empleados";
             empleadosToolStripMenuItem.Click += empleadosToolStripMenuItem_Click;
             // 
             // personasToolStripMenuItem
             // 
             personasToolStripMenuItem.Name = "personasToolStripMenuItem";
-            personasToolStripMenuItem.Size = new Size(224, 26);
+            personasToolStripMenuItem.Size = new Size(132, 22);
             personasToolStripMenuItem.Text = "Personas";
             personasToolStripMenuItem.Click += personasToolStripMenuItem_Click;
             // 
@@ -113,48 +114,48 @@
             // 
             ventanasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nuevaVentanaToolStripMenuItem, cascadaToolStripMenuItem, mosaicosVerticalesToolStripMenuItem, mosaicosHorizToolStripMenuItem, cerrarTodoToolStripMenuItem, organizarIconosToolStripMenuItem });
             ventanasToolStripMenuItem.Name = "ventanasToolStripMenuItem";
-            ventanasToolStripMenuItem.Size = new Size(82, 24);
+            ventanasToolStripMenuItem.Size = new Size(66, 19);
             ventanasToolStripMenuItem.Text = "Ventanas";
             // 
             // nuevaVentanaToolStripMenuItem
             // 
             nuevaVentanaToolStripMenuItem.Name = "nuevaVentanaToolStripMenuItem";
-            nuevaVentanaToolStripMenuItem.Size = new Size(228, 26);
+            nuevaVentanaToolStripMenuItem.Size = new Size(182, 22);
             nuevaVentanaToolStripMenuItem.Text = "Nueva Ventana";
             nuevaVentanaToolStripMenuItem.Click += nuevaVentanaToolStripMenuItem_Click;
             // 
             // cascadaToolStripMenuItem
             // 
             cascadaToolStripMenuItem.Name = "cascadaToolStripMenuItem";
-            cascadaToolStripMenuItem.Size = new Size(228, 26);
+            cascadaToolStripMenuItem.Size = new Size(182, 22);
             cascadaToolStripMenuItem.Text = "Cascada";
             cascadaToolStripMenuItem.Click += cascadaToolStripMenuItem_Click;
             // 
             // mosaicosVerticalesToolStripMenuItem
             // 
             mosaicosVerticalesToolStripMenuItem.Name = "mosaicosVerticalesToolStripMenuItem";
-            mosaicosVerticalesToolStripMenuItem.Size = new Size(228, 26);
+            mosaicosVerticalesToolStripMenuItem.Size = new Size(182, 22);
             mosaicosVerticalesToolStripMenuItem.Text = "Mosaicos Vertical";
             mosaicosVerticalesToolStripMenuItem.Click += mosaicosVerticalesToolStripMenuItem_Click;
             // 
             // mosaicosHorizToolStripMenuItem
             // 
             mosaicosHorizToolStripMenuItem.Name = "mosaicosHorizToolStripMenuItem";
-            mosaicosHorizToolStripMenuItem.Size = new Size(228, 26);
+            mosaicosHorizToolStripMenuItem.Size = new Size(182, 22);
             mosaicosHorizToolStripMenuItem.Text = "Mosaicos Horizontal";
             mosaicosHorizToolStripMenuItem.Click += mosaicosHorizToolStripMenuItem_Click;
             // 
             // cerrarTodoToolStripMenuItem
             // 
             cerrarTodoToolStripMenuItem.Name = "cerrarTodoToolStripMenuItem";
-            cerrarTodoToolStripMenuItem.Size = new Size(228, 26);
+            cerrarTodoToolStripMenuItem.Size = new Size(182, 22);
             cerrarTodoToolStripMenuItem.Text = "Cerrar Todo";
             cerrarTodoToolStripMenuItem.Click += cerrarTodoToolStripMenuItem_Click;
             // 
             // organizarIconosToolStripMenuItem
             // 
             organizarIconosToolStripMenuItem.Name = "organizarIconosToolStripMenuItem";
-            organizarIconosToolStripMenuItem.Size = new Size(228, 26);
+            organizarIconosToolStripMenuItem.Size = new Size(182, 22);
             organizarIconosToolStripMenuItem.Text = "Organizar Iconos";
             organizarIconosToolStripMenuItem.Click += organizarIconosToolStripMenuItem_Click;
             // 
@@ -164,22 +165,25 @@
             menuStrip.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, mantenimientosToolStripMenuItem, ventanasToolStripMenuItem });
             menuStrip.Location = new Point(0, 0);
             menuStrip.Name = "menuStrip";
-            menuStrip.Size = new Size(912, 28);
+            menuStrip.Padding = new Padding(5, 3, 0, 3);
+            menuStrip.Size = new Size(1904, 25);
             menuStrip.TabIndex = 0;
             menuStrip.Text = "menuStrip";
             // 
             // Main
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(912, 508);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1904, 1061);
             Controls.Add(statusStrip);
             Controls.Add(menuStrip);
+            Font = new Font("Sarabun", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip;
             Name = "Main";
-            Text = "Ferreteria";
+            Text = "Ferretería";
             statusStrip.ResumeLayout(false);
             statusStrip.PerformLayout();
             menuStrip.ResumeLayout(false);
